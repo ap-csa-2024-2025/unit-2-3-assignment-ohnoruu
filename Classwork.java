@@ -5,6 +5,7 @@ public class Classwork
     System.out.println(firstLastN("dictionary", 3));
     System.out.println(delEnd("library", 5));
     System.out.println(compareLower("antelope", "tiger"));
+    System.out.println(lengthFirst("Everything in its right place"));
   }
 
   public static String firstLastN(String word, int n){
@@ -30,6 +31,13 @@ public class Classwork
     String lowerWord2 = word2.toLowerCase();
     int output = lowerWord1.compareTo(lowerWord2);
     return output;
+  }
+
+  public static int lengthFirst(String sentence){
+    int spaceIndex = sentence.indexOf(" ");
+    String firstWord = sentence.substring(0, spaceIndex);
+    int lengthFirst = firstWord.length();
+    return lengthFirst;
   }
 
 }
